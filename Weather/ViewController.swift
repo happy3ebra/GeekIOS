@@ -3,7 +3,7 @@
 //  Weather
 //
 //  Created by Macbook on 10.12.2019.
-//  Copyright © 2019 CASTRTROY TECHNOLOGY LIMITED. All rights reserved.
+//  Copyright © 2019 Aleksei Varlamov TECHNOLOGY LIMITED. All rights reserved.
 //
 
 import UIKit
