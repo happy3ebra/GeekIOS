@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-1m-Wxd">
+                                <rect key="frame" x="120.66666666666669" y="171" width="134" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STk-tW-4hK">
+                                <rect key="frame" x="120.66666666666669" y="259" width="134" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Te3-YD-7sG">
+                                <rect key="frame" x="120.66666666666669" y="84" width="134" height="67"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF3-IO-47M">
+                                <rect key="frame" x="120.66666666666669" y="137" width="134" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjf-2u-hYw">
+                                <rect key="frame" x="141.66666666666666" y="213" width="92" height="26.333333333333258"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv9-et-HT3">
+                                <rect key="frame" x="164.66666666666666" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RF3-IO-47M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0sr-xr-ZMH"/>
+                            <constraint firstItem="STk-tW-4hK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1j0-aQ-izU"/>
+                            <constraint firstItem="Gjf-2u-hYw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kr-lP-x7l"/>
+                            <constraint firstItem="bv9-et-HT3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D5M-HN-s1M"/>
+                            <constraint firstItem="Gjf-2u-hYw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MaQ-h1-mrZ"/>
+                            <constraint firstItem="bv9-et-HT3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qkt-g4-C3E"/>
+                            <constraint firstItem="STk-tW-4hK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYs-Jq-lLJ"/>
+                            <constraint firstItem="Te3-YD-7sG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="bUM-V3-iSN"/>
+                            <constraint firstItem="STk-tW-4hK" firstAttribute="leading" secondItem="RF3-IO-47M" secondAttribute="leading" id="e4s-Ux-yam"/>
+                            <constraint firstItem="6X6-1m-Wxd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcp-rz-3Vs"/>
+                            <constraint firstItem="RF3-IO-47M" firstAttribute="leading" secondItem="Te3-YD-7sG" secondAttribute="leading" id="ovK-wt-h3k"/>
+                            <constraint firstItem="6X6-1m-Wxd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqF-WZ-IYC"/>
+                            <constraint firstItem="RF3-IO-47M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tns-Vb-bmU"/>
+                            <constraint firstItem="6X6-1m-Wxd" firstAttribute="leading" secondItem="RF3-IO-47M" secondAttribute="leading" id="wbd-Bo-DB0"/>
+                            <constraint firstItem="Te3-YD-7sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wod-sf-abc"/>
+                            <constraint firstItem="6X6-1m-Wxd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zzN-hg-bQ5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="449.27536231884062" y="128.57142857142856"/>
         </scene>
     </scenes>
 </document>
