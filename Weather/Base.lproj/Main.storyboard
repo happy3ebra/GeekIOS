@@ -51,6 +51,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmr-DJ-Vpg"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STk-tW-4hK">
                                 <rect key="frame" x="137.5" y="258.5" width="100" height="34"/>
@@ -88,6 +91,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ButtonLogin" destination="bv9-et-HT3" id="o5y-LH-Y2V"/>
+                        <outlet property="loginInput" destination="6X6-1m-Wxd" id="UUo-ib-zmf"/>
+                        <outlet property="loginText" destination="RF3-IO-47M" id="Vc0-7F-y5R"/>
+                        <outlet property="passwordInput" destination="STk-tW-4hK" id="rvT-cv-C8P"/>
+                        <outlet property="passwordText" destination="Gjf-2u-hYw" id="eKJ-e0-UuW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
