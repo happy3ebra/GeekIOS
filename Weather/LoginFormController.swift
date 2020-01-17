@@ -9,7 +9,18 @@
 import UIKit
 
 class LoginFormController: UIViewController {
-
+    
+    @IBOutlet weak var loginText: UILabel!
+    @IBOutlet weak var loginTF: UITextField!
+    @IBOutlet weak var passwordText: UILabel!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var ButtonSegue: UIButton!
+    @IBAction func ButtonAct(_ sender: Any) {
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
