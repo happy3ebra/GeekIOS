@@ -30,6 +30,21 @@ class LoginFormController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let login = loginInput.text!
+        let password = passwordInput.text!
+        
+        if login == "admin" && password == "123456" {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    
+    
+    
 /*
     func createToolbar() {
         
