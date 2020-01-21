@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CSK-2F-LaU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="2" id="CSK-2F-LaU">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CSK-2F-LaU" id="44y-Nv-PbM">
@@ -144,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8TQ-ZR-S9N">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="3" id="8TQ-ZR-S9N">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8TQ-ZR-S9N" id="W7a-Fa-rPR">
@@ -159,7 +159,7 @@
                             <outlet property="delegate" destination="Spg-gV-Vcl" id="wH1-lD-YFj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="4he-wW-Pbz"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="arrow.swap" catalog="system" id="4he-wW-Pbz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDz-PN-g55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,7 +175,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6RN-t5-75h">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="1" id="6RN-t5-75h">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6RN-t5-75h" id="WS5-vC-naI">
@@ -190,7 +190,9 @@
                             <outlet property="delegate" destination="yXP-hd-iRF" id="cx2-4C-ttN"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="aaU-Vn-GCf"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="photo" catalog="system" id="aaU-Vn-GCf">
+                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdK-3f-DMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,7 +221,7 @@
         <scene sceneID="F5t-9J-xm7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wPi-7w-XfF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="doc" catalog="system" id="Sx5-6G-xR6"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="gamecontroller" catalog="system" id="Sx5-6G-xR6"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mze-pY-E7w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5aj-lK-QGf">
@@ -237,7 +239,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doc" catalog="system" width="56" height="64"/>
+        <image name="arrow.swap" catalog="system" width="64" height="50"/>
+        <image name="gamecontroller" catalog="system" width="64" height="40"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
         <image name="vk-logo--fb" width="1200" height="630"/>
     </resources>
 </document>
