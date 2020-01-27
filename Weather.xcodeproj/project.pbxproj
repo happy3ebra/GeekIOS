@@ -14,6 +14,7 @@
 		FADB7AE8239FB77600828A8D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB7AE7239FB77600828A8D /* WeatherTests.swift */; };
 		FADB7AF3239FB77600828A8D /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB7AF2239FB77600828A8D /* WeatherUITests.swift */; };
 		FADB7B01239FC5D400828A8D /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB7B00239FC5D400828A8D /* LoginFormController.swift */; };
+		FAE0A3E423D9BA2D00D0918A /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A3E323D9BA2D00D0918A /* Friends.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FADB7AF2239FB77600828A8D /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		FADB7AF4239FB77600828A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADB7B00239FC5D400828A8D /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		FAE0A3E323D9BA2D00D0918A /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				FADB7AD1239FB77100828A8D /* Weather */,
-				FADB7AE6239FB77600828A8D /* WeatherTests */,
 				FADB7AF1239FB77600828A8D /* WeatherUITests */,
 				FADB7AD0239FB77100828A8D /* Products */,
 			);
@@ -100,6 +101,8 @@
 				FADB7AD2239FB77100828A8D /* AppDelegate.swift */,
 				FADB7AD6239FB77100828A8D /* Main.storyboard */,
 				FADB7B00239FC5D400828A8D /* LoginFormController.swift */,
+				FAE0A3E323D9BA2D00D0918A /* Friends.swift */,
+				FADB7AE6239FB77600828A8D /* WeatherTests */,
 				FADB7AD9239FB77600828A8D /* Assets.xcassets */,
 				FADB7ADB239FB77600828A8D /* LaunchScreen.storyboard */,
 				FADB7ADE239FB77600828A8D /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADB7AD3239FB77100828A8D /* AppDelegate.swift in Sources */,
+				FAE0A3E423D9BA2D00D0918A /* Friends.swift in Sources */,
 				FADB7B01239FC5D400828A8D /* LoginFormController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
