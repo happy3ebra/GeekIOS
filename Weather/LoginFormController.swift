@@ -16,7 +16,7 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var passwordText: UILabel!
     @IBOutlet weak var passwordInput: UITextField!
     
-    @IBOutlet weak var ButtonLogin: UIButton!
+    @IBOutlet weak var ButtonLogin : UIButton!
     
     @IBAction func ButtonAction(_ sender: Any) {
         

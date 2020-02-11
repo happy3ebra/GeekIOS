@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA62DF8C23E411F6004ED4EB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DF8A23E411F6004ED4EB /* CustomTableViewCell.swift */; };
+		FA62DF8D23E411F6004ED4EB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA62DF8B23E411F6004ED4EB /* CustomTableViewCell.xib */; };
 		FADB7AD3239FB77100828A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB7AD2239FB77100828A8D /* AppDelegate.swift */; };
 		FADB7AD8239FB77100828A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB7AD6239FB77100828A8D /* Main.storyboard */; };
 		FADB7ADA239FB77600828A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB7AD9239FB77600828A8D /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA62DF8A23E411F6004ED4EB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FA62DF8B23E411F6004ED4EB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		FADB7ACF239FB77100828A8D /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB7AD2239FB77100828A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB7AD7239FB77100828A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				FADB7AD2239FB77100828A8D /* AppDelegate.swift */,
 				FADB7AD6239FB77100828A8D /* Main.storyboard */,
 				FADB7B00239FC5D400828A8D /* LoginFormController.swift */,
+				FA62DF8A23E411F6004ED4EB /* CustomTableViewCell.swift */,
+				FA62DF8B23E411F6004ED4EB /* CustomTableViewCell.xib */,
 				FAE0A3E323D9BA2D00D0918A /* Friends.swift */,
 				FADB7AE6239FB77600828A8D /* WeatherTests */,
 				FADB7AD9239FB77600828A8D /* Assets.xcassets */,
@@ -237,6 +243,7 @@
 			files = (
 				FADB7ADD239FB77600828A8D /* LaunchScreen.storyboard in Resources */,
 				FADB7ADA239FB77600828A8D /* Assets.xcassets in Resources */,
+				FA62DF8D23E411F6004ED4EB /* CustomTableViewCell.xib in Resources */,
 				FADB7AD8239FB77100828A8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 			files = (
 				FADB7AD3239FB77100828A8D /* AppDelegate.swift in Sources */,
 				FAE0A3E423D9BA2D00D0918A /* Friends.swift in Sources */,
+				FA62DF8C23E411F6004ED4EB /* CustomTableViewCell.swift in Sources */,
 				FADB7B01239FC5D400828A8D /* LoginFormController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
