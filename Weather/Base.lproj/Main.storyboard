@@ -393,7 +393,7 @@
         <scene sceneID="hNt-JE-wbC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pFk-ML-KIV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="aaU-Vn-GCf">
+                    <tabBarItem key="tabBarItem" selectedImage="user" systemItem="contacts" id="aaU-Vn-GCf">
                         <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -435,7 +435,7 @@
         <scene sceneID="AJ3-ux-1Yh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ePI-Ad-oph" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="vk" systemItem="contacts" id="NE5-Jq-xB4"/>
+                    <tabBarItem key="tabBarItem" selectedImage="user" systemItem="bookmarks" id="NE5-Jq-xB4"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="HVT-r8-afd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zgc-k3-SdK">
@@ -453,6 +453,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="user" width="200" height="200"/>
         <image name="user10" width="215" height="234"/>
         <image name="user11" width="225" height="225"/>
         <image name="user12" width="225" height="225"/>
@@ -460,7 +461,6 @@
         <image name="user16" width="225" height="225"/>
         <image name="user18" width="128" height="128"/>
         <image name="user5" width="225" height="225"/>
-        <image name="vk" width="310" height="163"/>
         <image name="vk-logo--fb" width="1200" height="630"/>
     </resources>
 </document>
