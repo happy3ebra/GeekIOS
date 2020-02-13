@@ -27,6 +27,11 @@ class LoginFormController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Создаем для того чтобы при таб на скрол клава уходила
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollView.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
@@ -51,6 +56,14 @@ class LoginFormController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
     @objc func keyboardWillShown (notification: Notification){
         let info = notification.userInfo! as NSDictionary
         let size = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
@@ -61,8 +74,16 @@ class LoginFormController: UIViewController {
         
     }
     @objc func keyboardWillHide (notification: Notification ){
+        scrollView.contentInset = .zero
         
     }
+//скрываем клаву
+    @objc func hideKeyboard(){
+        
+        self.scrollView.endEditing(true)
+    }
+    
+    
     }
     
     
