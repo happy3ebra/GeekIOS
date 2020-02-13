@@ -20,9 +20,9 @@ class LoginFormController: UIViewController {
     
     @IBAction func ButtonAction(_ sender: Any) {
         
-        
-        
     }
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
 
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class LoginFormController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let login = loginInput.text!
         let password = passwordInput.text!
@@ -41,8 +41,38 @@ class LoginFormController: UIViewController {
             return false
         }
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShown(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil )
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShown (notification: Notification){
+        let info = notification.userInfo! as NSDictionary
+        let size = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
+        
+        let contentInserts = UIEdgeInsets(top: 0, left: 0, bottom: size.height , right: 0)
+        self.scrollView?.contentInset = contentInserts
+        self.scrollView.scrollIndicatorInsets = contentInserts
+        
+    }
+    @objc func keyboardWillHide (notification: Notification ){
+        
+    }
+    }
+    
+    
+    
+    
+    
 
     
+
+  
     
     
 /*
@@ -76,6 +106,7 @@ class LoginFormController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
+*/
