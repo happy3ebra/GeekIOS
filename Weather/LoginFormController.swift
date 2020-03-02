@@ -28,6 +28,13 @@ class LoginFormController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        
         // Создаем для того чтобы при таб на скрол клава уходила
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -82,6 +89,10 @@ class LoginFormController: UIViewController {
         
         self.scrollView.endEditing(true)
     }
+    
+    
+    
+    
     
     
     }
